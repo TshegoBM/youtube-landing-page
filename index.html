@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import the Roboto font with various weights -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
+    <!-- Link to the favicon -->
+    <link rel="icon" href="./assets/youtube.png">
+    <!-- Import Material Symbols font variants -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,100,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <!-- Link to the custom stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+     <!-- Title of the page -->
+    <title>YouTube</title>
+</head>
+<body>
+    <!-- Navbar section containing the YouTube logo, search bar, and navigation icons -->
+    <div class="navbar">
+        <!-- Logo section with menu icon and YouTube logo -->
+        <div class="logo">
+            <span class="material-symbols-outlined">menu</span>
+            <img src="./assets/youtube-logo-94D7C/youtube-logo.png" alt="YouTube Logo">
+
+        </div>
+        <!-- Search bar section with input field, search button, and voice button -->
+        <div class="searchbar">
+            <input type="text" placeholder="Search">
+            <button class="search-button"><i class="material-symbols-sharp">search</i></button>
+            <button class="voice-button"><i class="material-symbols-rounded">keyboard_voice</i></button>
+        </div>
+        <!-- Navigation icons section with icons and user profile image -->
+        <div class="navigation-icons">
+            <span class="category-icons">
+                <i class="material-symbols-sharp">video_call</i>
+            </span> 
+            <span class="category-icons">
+                <i class="material-symbols-sharp">notifications</i>
+            </span> 
+                <img id="img" draggable="false" class="style-scope yt-img-shadow" alt="Avatar image" height="32" width="32" src="https://yt3.ggpht.com/aXOcv5bKZa0FjHL6TgTzsojiJf_m6UyGMPmvUOaoN5Q6SgY0PRQXglx6VgzEKm6SH3Xv4eUthcA=s88-c-k-c0x00ffffff-no-rj" alt="">
+        </div>
+    </div>
+
+    <!-- Main body section containing categories and video grid -->
+    <div class="mainbody">
+        
+        <!-- Categories section containing different category sections -->
+        <div class="categories">
+            <!-- Category section with Home, Shorts, and Subscriptions -->
+            <div class="category-section">
+                    <span class="category active">
+                        <i class="material-symbols-outlined">home</i>
+                        Home
+                    </span>
+                    <span class="category">
+                        <i class="material-symbols-sharp">bolt</i>
+                        Shorts
+                    </span>
+                     
+                    <span class="category">
+                        <i class="material-symbols-sharp">subscriptions</i>
+                        Subscriptions
+                    </span>
+            </div>
+            <!-- Category section with Your Channel, History, and Your Videos -->
+            <div class="category-section">
+                <span class="category">
+                    <i class="material-symbols-sharp">account_box</i>
+                    Your channel
+                  </span>
+                  <span class="category">
+                    <i class="material-symbols-sharp">history</i>
+                    History
+                  </span>
+                  <span class="category">
+                    <i class="material-symbols-sharp">slideshow</i>
+                    Your videos
+                  </span>
+                  <span class="category">
+                    <i class="material-symbols-sharp">watch_later</i>
+                    Watch later
+                  </span>
+                  <span class="category">
+                    <i class="material-symbols-sharp">expand_more</i>
+                    Show more
+                  </span>
+            </div>
+            <!-- Category section with Subscriptions, Explore, and More from YouTube -->
+            <div class="category-section">
+                    <p class="category-heading">Subscriptions</p>
+                <span class="category">
+                    <img src="./assets/Nice_Guys.jpeg" alt="Profile icon">
+                    Nice Guys
+                  </span>
+                  <span class="category">
+                   <img src="./assets/Andi_Xaba.jpeg" alt="Profile icon">
+                    Andi Xaba
+                  </span>
+                  <span class="category">
+                    <img src="./assets/Jenni's Lectures.jpeg" alt="Profile icon">
+                    Jenny's Lectures CS IT
+                  </span>
+                  <span class="category">
+                    <img src="./assets/Dr. Ehoneah.jpeg" alt="Profile icon">
+                    Dr. Ehoneah Obed
+                  </span>
+                  <span class="category">
+                    <img src="./assets/Portfolio.jpeg" alt="Profile icon">
+                    Portfolio Courses
+                  </span>
+                  <span class="category">
+                    <img src="./assets/Lebone.jpeg" alt="Profile icon">
+                    Lebone M.
+                  </span>
+                  <span class="category">
+                   <img src="./assets/Katlego.jpeg" alt="Profile icon">
+                    Katelgo Developer
+                  </span>
+                  <span class="category">
+                    <i class="material-symbols-sharp">expand_more</i>
+                    Show 197 More
+                  </span>
+            </div>
+            
+            <div class="category-section">
+                    <p class="category-heading">Explore</p>
+                <span class="category">
+                    <i class="material-symbols-sharp">mode_heat</i>
+                    Trending
+                  </span>
+                  <span class="category">
+                    <i class="material-symbols-sharp">music_note</i>
+                    Music
+                  </span>
+                  <span class="category">
+                    <i class="material-symbols-sharp">sports_esports</i>
+                    Gaming
+                  </span>
+                  <span class="category">
+                    <i class="material-symbols-sharp">newsmode</i>
+                    News
+                  </span>
+                  <span class="category">
+                    <i class="material-symbols-sharp">trophy</i>
+                    Sports
+                  </span>
+                  <span class="category">
+                    <i class="material-symbols-sharp">podcasts</i>
+                    Podcasts
+                  </span>
+            </div>
+            <div class="category-section-5">
+                    <p class="category-heading">More from YouTube</p>
+                <span class="category">
+                    <img src="./assets/YouTube_full-color_icon_(2017).svg.png">
+                    YouTube Premium
+                  </span>
+                  <span class="category">
+                    <img src="./assets/YouTube_full-color_icon_(2017).svg.png">
+                    YouTube Studio
+                  </span>
+                  <span class="category">
+                    <img src="./assets/YouTube_full-color_icon_(2017).svg.png">
+                    YouTube Music
+                  </span>
+                  <span class="category">
+                    <img src="./assets/YouTube_full-color_icon_(2017).svg.png">
+                    YouTube Kids
+                  </span>
+            </div>
+            <!-- Category section with Settings, Report History, Help, and Feedback -->
+            <div class="category-section">
+                <span class="category">
+                    <i class="material-symbols-sharp">settings</i>
+                    Settings
+                  </span>
+                  <span class="category">
+                    <i class="material-symbols-sharp">flag</i>
+                    Report history
+                  </span>
+                  <span class="category">
+                    <i class="material-symbols-sharp">help</i>
+                    Help
+                  </span>
+                  <span class="category">
+                    <i class="material-symbols-sharp">Feedback</i>
+                    Feedback
+                  </span>
+            </div>
+            <!-- Categories footer section with links and copyright information -->
+            <div class="categories-footer">
+                <!-- Footer sections with links and copyright information -->
+                <div class="footer-section">
+                    <span>About</span>
+                    <span>Press</span>
+                    <span>Copyright</span>
+                    <span>Contact us</span>
+                    <span>Creators</span>
+                    <span>Advertise</span>
+                    <span>Developers</span>
+                </div>
+                <div class="footer-section">
+                    <span>Terms</span>
+                    <span>Privacy</span>
+                    <span>Policy & Safety</span><br>
+                    <span>How youTube works</span><br>
+                    <span>Test new features</span>
+                </div>
+                <span class="copyright">
+                    © 2024 Zaio YouTube Clone 
+                </span>
+            </div>
+        </div>  
+
+        <!-- Videos section containing iron-selector and video grid -->    
+        <div class="videos">
+            <!-- Iron selector for filtering video categories -->
+            <div class="iron-selector">
+                <!-- ... (buttons for different video categories) ... -->
+                <button id="button-fill">All</button>
+                <button>Music</button>
+                <button>Rhythm & Blues</button>
+                <button>Grammy Awards</button>
+                <button>Hair twists</button>
+                <button>Hair conditioners</button>
+                <button>C++</button>
+                <button>Live</button>
+                <button>Nursing</button>
+                <button>African Music</button>
+                <button>Podcasts</button>
+                <button>Jazz</button>
+                <button>Vocal Music</button>
+                <button>Rapping</button>
+                <button>Comedy</button>
+                <button>Electronic Dance Music</button>
+                <button>Recently Uploaded</button>
+                <button>Watched</button>
+                <button>New to you</button>
+            </div>
+
+            <!-- Video grid containing individual video elements -->
+            <div class="video-grid">
+                <!-- Individual video elements with thumbnails, details, and booking actions -->
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/7EafwVyFUGg/maxresdefault.jpg">
+                        <div class="details">
+                            <div class="first-profile">
+                                <img src="https://yt3.ggpht.com/ytc/AIf8zZQV-e735Ny5oQhKWRZQxn_dm3rCV6_woTVq4UXAtqw=s68-c-k-c0x00ffffff-no-rj">
+                            </div>
+                            <div class="video-details">
+                                <p>This year why don't you fly Better?</p>
+                                <div class="sponsor">
+                                    <span class="sponsor-bold">Sponsored •</span>
+                                    <span class="sponsor-color">Emirates</span>  
+                                </div> 
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="booking-action">
+                        <div class="booking">
+                            <button>
+                                Book now
+                                <i class="material-symbols-sharp">open_in_new</i>
+                            </button>
+                             
+                        </div>
+                    </div>
+                </div>                              
+                <!-- Individual video elements with thumbnails, details, and views...-->
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/uzFyx1glMyA/maxresdefault.jpg">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/ytc/AIf8zZRYrOBSg8X_VlYL31Q0ZZSSHAt8L11mp5Y6bTgOCg=s88-c-k-c0x00ffffff-no-rj">
+                            </div>
+                            <div class="video-details">
+                                <p>[Official Audio] wave to earth - light</p>
+                                <div class="posted-by">
+                                    <div class="align-container">
+                                        <span>POLCANOS</span>  
+                                        <i class="material-symbols-rounded">music_note</i> 
+                                    </div>
+                                    <div class="views-date">
+                                        <span>2.3M views</span>
+                                        <span>•</span>
+                                        <span>4 years ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/bdfh6ZUvwVw/maxresdefault.jpg" alt="">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/ytc/AIf8zZT1nbQ7re2-12jCsO1JNGaYWTW1nrtSwmGoMobA1w=s88-c-k-c0x00ffffff-no-rj">
+                            </div>
+                            <div class="video-details">
+                                <p>Where’s Usher? Apple Music Super Bowl LVIII Halftime Show (Official Film)</p>
+                                <div class="posted-by">
+                                    <div class="align-container">
+                                        <span>Apple Music</span>
+                                        <i class="material-symbols-rounded">check_circle</i> 
+                                    </div>
+                                    <div class="views-date">
+                                        <span>5.6M views</span>
+                                        <span>•</span>
+                                        <span>3 days ago</span> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>              
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/0tm2OZj0Uug/maxresdefault.jpg" alt="">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/g1M2xKnM5cJuSrQt6NbhdH9uG_2PYtXKA2KiwM8pj7OfwZZ3ds26411KeQLoOWrITpDOf_3w=s88-c-k-c0x00ffffff-no-nd-rj">
+                            </div>
+                            <div class="video-details">
+                                <p>Chill Lofi Afrobeats Music 🌻 African Lofi Yellow Mix</p>
+                                <div class="posted-by">
+                                    <div class="align-container">
+                                      <span>AFRICAN LOFI</span>  
+                                      <i class="material-symbols-rounded">music_note</i>
+                                    </div>
+                                    
+                                    <div class="views-date">
+                                        <span>1.9M views</span>
+                                        <span>•</span>
+                                        <span>3 years ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>               
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/ssJY5MDLjlo/maxresdefault.jpg" alt="">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/ytc/AIf8zZRDPxvkhSlQUClvLFFU9xiyZaBiIaTvd-eNrfX6jA=s88-c-k-c0x00ffffff-no-rj" >
+                            </div>
+                            <div class="video-details">
+                                <p>C Programming for Beginners | Full Course</p>
+                                <div class="posted-by">
+                                    <span>Portfolio Courses</span>
+                                    <div class="views-date">
+                                        <span>864K views</span>
+                                        <span>•</span>
+                                        <span>2 years ago</span> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>               
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/kryum4bLnq8/maxresdefault.jpg">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/ytc/AIf8zZQ55VBd0DO-Veshlxyo_AHlslLLorzTQkMGv3tk=s88-c-k-c0x00ffffff-no-rj">
+                            </div>
+                            <div class="video-details">
+                                <p>LEARN HOW TO USE THE ZAIO PLATFORM AND START YOUR CODING JOURNEY</p>
+                                <div class="posted-by">
+                                    <span>Zaio</span>
+                                    <div class="views-date">
+                                        <span>1.4K views</span>
+                                        <span>•</span>
+                                        <span>2 years ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>              
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/Q3EgUUcp16E/maxresdefault.jpg" alt="">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/qie1R9eq2SRJFWP4U48lq6Na15qL8r__9dDUQUIFoA1Xd7z8EX9uhDe3CsEX5RXR9L5Pdv9b=s68-c-k-c0x00ffffff-no-rj">
+                            </div>
+                            <div class="video-details">
+                                <p>LONGEST natural hair in Africa! WAIT until you hear her routine! #longnaturalhair #naturalhair</p>
+                                <div class="posted-by">
+                                    <span>Coily Diaries</span>
+                                    <div class="views-date">
+                                        <span>70K views</span>
+                                        <span>•</span>
+                                        <span>4 years ago</span> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>               
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/zjTO2XrXiHk/maxresdefault.jpg" alt="">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/uvzB2Adfe-fNFcOsGCLo4nfflP6iFVOf0OqIVzvsStfgRVraJPbGZQUAtXUSulZGzuXYkkjUGg=s88-c-k-c0x00ffffff-no-rj">
+                            </div>
+                            <div class="video-details">
+                                <p>$1 vs $1000 Plant!</p>
+                                <div class="posted-by">
+                                    <div class="align-container">
+                                       <span>Sheffield Made Plants</span> 
+                                       <i class="material-symbols-rounded">check_circle</i> 
+                                    </div>
+                                    <div class="views-date">
+                                        <span>13K views</span>
+                                        <span>•</span>
+                                        <span>1 day ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/07H0lzV3aLo/maxresdefault.jpg" >
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/25eQVs6eeQmRohuCA4xlY9vTka1_fKSazl4DVbRJxZOhz6N2lQy6GVdaWpSVnv_OE08W3ytQ=s68-c-k-c0x00ffffff-no-rj" >
+                            </div>
+                            <div class="video-details">
+                                <p>HIGHLIGHTS | South Africa 🆚 DR Congo | #TotalEnergiesAFCON2023 - 3rd Place
+                                </p>
+                                <div class="posted-by">
+                                    <div class="align-container">
+                                       <span>CAF TV</span> 
+                                       <i class="material-symbols-rounded">check_circle</i>
+                                    </div>
+                                    
+                                    <div class="views-date">
+                                        <span>800K views</span>
+                                        <span>•</span>
+                                        <span>1 day ago</span> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/4IJ-1mEnFiU/maxresdefault.jpg">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/gDCwhZGxgUY2Psz0NciwaxgVukw3MWf_f6T4OhymWkRQBdN8UGmGwsVhqiUjde98Dh8meWEE0g=s68-c-k-c0x00ffffff-no-rj">
+                            </div>
+                            <div class="video-details">
+                                <p>Tyla "Water" Official Lyrics & Meaning | Genius Verified</p>
+                                <div class="posted-by">
+                                    <div class="align-container">
+                                       <span>Genius</span> 
+                                       <i class="material-symbols-rounded">check_circle</i> 
+                                    </div>
+                                    <div class="views-date">
+                                        <span>1.3M views</span>
+                                        <span>•</span>
+                                        <span>2 months ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/S6fUMdKV3Io/maxresdefault.jpg">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/w6Zi_gEQ3Jir9tC_lkOR62yRax33G_YrmOxoDootdAuCIFkE8cHt-3SiIpYTRqLFFG7kXm6X=s88-c-k-c0x00ffffff-no-rj">
+                            </div>
+                            <div class="video-details">
+                                <p>Sis, You Have To Keep Going (What it REALLY Takes To Achieve Your Dreams)</p>
+                                <div class="posted-by">
+                                    <span>Oh! Stephco</span>
+                                    <div class="views-date">
+                                        <span>13K views</span>
+                                        <span>•</span>
+                                        <span>4 days ago</span> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/mNU9c0XMR-w/maxresdefault.jpg">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/ytc/AIf8zZQLTwr0haLsb9yIqL396XPScJP3pXBDZf9opajt=s88-c-k-c0x00ffffff-no-rj">
+                            </div>
+                            <div class="video-details">
+                                <p>1000+ So Yummy Cake Decoration Ideas | Oddly Satisfying Cake Decorating Hacks</p>
+                                <div class="posted-by">
+                                    <span>Ruby Cake</span>
+                                    <div class="views-date">
+                                        <span>86K views</span>
+                                        <span>•</span>
+                                        <span>8 months ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/d11FF4fBJsQ/maxresdefault.jpg">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/ytc/AIf8zZSjVjB9iP-BmbyP7xru_f3Xu5Xz_rChlXi2RWbG=s88-c-k-c0x00ffffff-no-rj-mo" >
+                            </div>
+                            <div class="video-details">
+                                <p>Free Nationals & Chronixx - Eternal Light (Audio)</p>
+                                <div class="posted-by">
+                                    <div class="align-container">
+                                        <span>free nationals</span>
+                                        <i class="material-symbols-rounded">music_note</i> 
+                                    </div>
+                                    
+                                    <div class="views-date">
+                                        <span>10M views</span>
+                                        <span>•</span>
+                                        <span>4 years ago</span> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/Y9cwj01Di6M/maxresdefault.jpg">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/ytc/AIf8zZSCSIBG0UHFJ4kaiymmM2u1NYC33swVydVClKEI=s88-c-k-c0x00ffffff-no-rj">
+                            </div>    
+                            <div class="video-details">
+                                <p>1000+ Fancy Cake Decorating Hacks For Everyone | Amazing Chocolate Cake Recipes</p>    
+                                <div class="posted-by">
+                                    <div class="align-container">
+                                       <span>Transform Cake</span> 
+                                       <i class="material-symbols-rounded">check_circle</i> 
+                                    </div>
+
+                                    <div class="views-date">
+                                        <span>1.1M views</span>
+                                        <span>•</span>
+                                        <span>4 months ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/UoKMzPtAedk/hqdefault_live.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCS_4BQ2-ay50L8IPBMpQsNM7-gfA" alt="">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/DLppnHHH_gE009bJrH14WypH0WeCp3t7H4LR3vq_5lgtQTP-MZGErgkYngUuA67YmTYCO3D0ATw=s88-c-k-c0x00ffffff-no-nd-rj">
+                            </div>
+                            <div class="video-details">
+                                <p>Indie / Bedroom / Pop / Surf Rock - 24/7 Radio - Nice Guys Chill FM</p>
+                                <div class="posted-by">
+                                    <span>Nice Guys</span>
+                                    <div class="views-date">
+                                        <span>7595 views</span>
+                                        <span>•</span>
+                                        <span>6 hours ago</span> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/Sizwk5IrlKA/maxresdefault.jpg" alt="">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/ytc/AIf8zZSvwJWF-pDRhyJK45BLPwdRbc0nTnrV7DtNIS4E6j0=s88-c-k-c0x00ffffff-no-rj">
+                            </div>
+                            <div class="video-details">
+                                <p>Learn How to Talk About a Decision You'Ve Made in Japanese | Daily Japanese Conversations #24</p>
+                                <div class="posted-by">
+                                    <span>Learn Japanese with JapanesePod101.com</span>
+                                    <div class="views-date">
+                                        <span>2.1K views</span>
+                                        <span>•</span>
+                                        <span>1 day ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/0WDUZPIv2yk/maxresdefault.jpg" alt="">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/ytc/AIf8zZQaPLyh4OXcY5tSNiLo5OymTSHWTjdkpUVaRc5T=s88-c-k-c0x00ffffff-no-rj" >
+                            </div>
+                            <div class="video-details">
+                                <p>If You Only Learn ONE Stitch, Make it THIS one! 🤩⭐</p>
+                                <div class="posted-by">
+                                    <span>Hooked by Robin</span>
+                                    <div class="views-date">
+                                        <span>3.6M views</span>
+                                        <span>•</span>
+                                        <span>1 year ago</span> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/HpcTJW4ur54/maxresdefault.jpg">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/B4PJsia7AFizPbzcRp93CZ3p-cV7ECec-N1xkGPC1xMH-Amj-NrZq8_l7B6LbWUg-eONOcm-Fg=s68-c-k-c0x00ffffff-no-rj">
+                            </div>
+                            <div class="video-details">
+                                <p>How to terraform Mars! - Part 1</p>
+                                <div class="posted-by">
+                                    <div class="align-container">
+                                       <span>SolarBalls</span> 
+                                       <i class="material-symbols-rounded">check_circle</i> 
+                                    </div>
+                                    <div class="views-date">
+                                        <span>495K views</span>
+                                        <span>•</span>
+                                        <span>2 days ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/iaTXu5JSpiA/maxresdefault.jpg">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/HHLWJuSN7yzAqfMyTtscrdZ_cfN0Yo2l-3-X056Y1IboGzyMjcjY5aP4EMkfK5K3Q4sXn-IUUg=s88-c-k-c0x00ffffff-no-rj">
+                            </div>
+                            <div class="video-details">
+                                <p>I Grew My Hair FAST With These Tips | Natural Hair Growth</p>
+                                <div class="posted-by">
+                                    <span>Tiana Michelle</span>
+                                    <div class="views-date">
+                                        <span>59K views</span>
+                                        <span>•</span>
+                                        <span>1 month ago</span> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/HX6dQwB8FKs/maxresdefault.jpg">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/ytc/AIf8zZSExiuocarbZzp2qVWoATqX5YzIIJ7Qx9tDCc09aA=s88-c-k-c0x00ffffff-no-rj">
+                            </div>
+                            <div class="video-details">
+                                <p>How To Create A YouTube Channel - 2024 Beginner’s Guide</p>
+                                <div class="posted-by">
+                                    <span>Howfinity</span>
+                                    <div class="views-date">
+                                        <span>63K views</span>
+                                        <span>•</span>
+                                        <span>1 month ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/9dL0hYtH3GE/maxresdefault.jpg">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/QnTNTL6lvpKA-OWYdSwke3kF9GEBoriwaaHlbOOo4E7hRuXBEiO1mrYsvmk8xQznjg3GKWUT=s88-c-k-c0x00ffffff-no-rj" >
+                            </div>
+                            <div class="video-details">
+                                <p>+50 Cool Life Hacks That Are Worth Memorizing</p>
+                                <div class="posted-by">
+                                    <div class="align-container">
+                                        <span>BRIGHT SIDE</span>
+                                        <i class="material-symbols-rounded">check_circle</i> 
+                                    </div>
+                                    
+                                    <div class="views-date">
+                                        <span>1.4M views</span>
+                                        <span>•</span>
+                                        <span>1 year ago</span> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/8K3jneLJA90/maxresdefault.jpg">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/23TuXHVGFOQNJ--nGIH3sbX5Tt1pscojy3lHhHJB3T9IcowEFJHJqORL7o1Gw-4WrrLMFFknLQ=s88-c-k-c0x00ffffff-no-rj">
+                            </div>    
+                            <div class="video-details">
+                                <p>Fake Fitness INFLUENCER EXPOSED, What Happens Is Shocking | Dhar Mann Studios</p>    
+                                <div class="posted-by">
+                                    <div class="align-container">
+                                       <span>Dhar Mann Studios</span> 
+                                       <i class="material-symbols-rounded">check_circle</i> 
+                                    </div>
+
+                                    <div class="views-date">
+                                        <span>5.2M views</span>
+                                        <span>•</span>
+                                        <span>2 weeks ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/TfpgZwLSB1M/maxresdefault.jpg" alt="">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/xYXqTqLjqt6pxghmy7oY6erNiN4-cCm5UYxfALJi65rJusPSK6UIQ_m-eDMyOIs_yN5ZwI6FGHg=s88-c-k-c0x00ffffff-no-rj">
+                            </div>
+                            <div class="video-details">
+                                <p>Beyoncé’s Full Super Bowl Version Ad</p>
+                                <div class="posted-by">
+                                    <span>Diah J</span>
+                                    <div class="views-date">
+                                        <span>17K views</span>
+                                        <span>•</span>
+                                        <span>21 hours ago</span> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/-1dlYcED_YI/maxresdefault.jpg">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/TEAdMZfKzX66swz8s-tDk1slRImh9GLdsJltTYmwc-25cYV-c_8eYN5K1jpywF2q9Dy_HKGR=s88-c-k-c0x00ffffff-no-rj">
+                            </div>
+                            <div class="video-details">
+                                <p>Pandemic Causes Everyone Who Falls Asleep on Earth to Die</p>
+                                <div class="posted-by">
+                                    <div class="align-container">
+                                      <span>Movie Recaps</span> 
+                                      <i class="material-symbols-rounded">check_circle</i>  
+                                    </div>
+                                    <div class="views-date">
+                                        <span>126K views</span>
+                                        <span>•</span>
+                                        <span>1 day ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/0p7c4gMJZEg/maxresdefault.jpg" alt="">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/sOeNeoD88sHOyl10XJyUDwfuv98OMqoXSHV9Jlz5odKgPd4sHEPgtqHD6zF9a0sOi_BNdpYxMQ=s88-c-k-c0x00ffffff-no-rj" >
+                            </div>
+                            <div class="video-details">
+                                <p>Top 10 Most Charming Small Towns in South Africa - Travel Video 2024</p>
+                                <div class="posted-by">
+                                    <span>Travel Insights</span>
+                                    <div class="views-date">
+                                        <span>136K views</span>
+                                        <span>•</span>
+                                        <span>1 month ago</span> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://news-site-za.s3.af-south-1.amazonaws.com/images/2024/02/Tiguan-RSR-3-scaled.jpg">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/ytc/AIf8zZT7Loh97L2UCjzd67eyMXMZnAUwnbX4EfvmWKVQk7c=s88-c-k-c0x00ffffff-no-rj">
+                            </div>
+                            <div class="video-details">
+                                <p>Audi RS3 engine swap on a VW Tiguan: Brutal-sounding family car sleeper</p>
+                                <div class="posted-by">
+                                    <div class="align-container">
+                                      <span>Cars.co.za</span> 
+                                      <i class="material-symbols-rounded">check_circle</i>  
+                                    </div>
+                                    <div class="views-date">
+                                        <span>125K views</span>
+                                        <span>•</span>
+                                        <span>4 daysago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/SBmSRK3feww/maxresdefault.jpg" alt="">
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/ytc/AIf8zZSoN0PkqajCSfsSJT8C0zd9kgJ5zI-JR_K7BOJ3=s88-c-k-c0x00ffffff-no-rj" >
+                            </div>
+                            <div class="video-details">
+                                <p>JavaScript Full Course - Beginner to Pro - Part 1</p>
+                                <div class="posted-by">
+                                    <span>SuperSimpleDev</span>
+                                    <div class="views-date">
+                                        <span>3.5M views</span>
+                                        <span>•</span>
+                                        <span>10 months ago</span> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>         
+    </div>
+</body>
+</html>

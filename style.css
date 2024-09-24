@@ -1,0 +1,458 @@
+/* Import the Roboto font with various weights and styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Reset margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the default font family for the body */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Styles for outlined material symbols */
+.material-symbols-outlined{
+    font-size: 24px;
+}
+
+/* Styles for sharp material symbols */
+.material-symbols-sharp{
+    font-size: 24px;
+}
+
+/* Additional styles for rounded material symbols */
+.material-symbols-rounded{
+    padding: 5px;
+}
+
+/* Styles for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0px 16px;
+}
+
+/* Styles for the logo section within the navbar */
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+/* Styles for the logo image within the logo section */
+.logo img{
+    width: 120px;
+    margin-left: 10px;
+}
+
+/* Styles for the searchbar section within the navbar */
+.navbar .searchbar{
+    display: flex;
+}
+
+/* Styles for the input field within the searchbar */
+.searchbar input{
+    display:flex;
+    border: 1px solid #cccccc;
+    width: 600px;
+    height: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 0px 4px 0px 16px;
+    font-size: 16px;  
+}
+
+/* Styles for the search button within the searchbar */
+.searchbar .search-button {
+    display: flex;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid #d3d3d3;
+    width: 64px;
+    height: 40px;
+    border-left: none;
+    padding: 8px 6px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+.searchbar .search-button:hover{
+    background-color: #ede9e9;
+}
+
+/* Styles for the voice button */
+button.voice-button{
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 6px 5px;
+    margin-left: 10px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+
+button.voice-button:hover{
+    background-color: #ede9e9;
+}
+
+.searchbar button.voice-button i{
+    font-size: 20px;
+    color: black;
+}
+
+/* Styles for the voice button icon */
+.navigation-icons img{
+    border-radius: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* Styles for the navigation icons section */
+.navigation-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Styles for category icons within the navbar */
+.category-icons{
+    display:flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+
+.mainbody{
+    display: flex;
+    height: calc(100vh - 56px);
+    overflow: hidden;
+}
+
+/* Styles for the main body container */
+.categories{
+width: 240px;
+height: 100%;
+background: white;
+overflow-y: scroll;
+}
+
+/* Styles for the categories section */
+.category-section {
+    border-bottom: 1px solid #e8e5e5;
+    margin-top: 10px;
+}
+
+
+.category-section .category:last-child {
+    margin-bottom: 10px;
+}
+
+/* Styles for images within category sections */
+.category-section img{
+    border-radius: 50px;
+    margin-right: 20px;
+    height: 24px;
+    width: auto;
+}
+
+
+.category-section-5 img{
+    width: 25px;
+    height: 17px;
+    margin-right: 20px;
+}
+
+/* Styles for category heading */
+.category-heading{
+    margin-left: 25px;
+    margin: 10px 0px 10px 25px;
+    font-weight: 500;
+}
+
+/* Styles for individual categories */
+.category{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   height: 40px;
+   padding: 0px 24px;
+   font-size: 14px;
+   cursor: pointer;
+   font-weight: 400
+}
+
+/* Hover styles for categories */
+.category:hover{
+    background: #f9f9f9;
+    width: 204px;
+    height:40px;
+    font-weight: 500;
+    padding: 0px 12px;
+    margin-left: 13px;
+    border-radius: 8px;
+}
+
+/* Styles for the active category */
+.active:hover {
+    background: #d0d0d0;
+    margin-right: 10px;
+}
+
+
+.active {
+    background: #f2f2f2;
+    width: 204px;
+    height:40px;
+    font-weight: 500;
+    padding: 0px 12px;
+    margin-left: 13px;
+    border-radius: 8px;
+}
+
+/* Styles for the active category icon */
+.active i{
+    color: black;
+    fill: currentColor;
+}
+
+/* Styles for category icons */
+.category i{
+    margin-right: 24px;
+}
+
+/* Styles for the shorts category */
+.category-shorts{
+    display:flex;
+    align-items: center;
+}
+
+
+.category-shorts img{
+    height: 24px;
+    width:24px;
+    margin: 5px 25px 0px 24px;
+}
+
+/* Styles for shorts paragraph */
+.shorts-p{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* Styles for the category section images */
+.category-section .category img{
+    width:30px;
+    height: 30px;
+}
+
+/* Styles for the categories footer section */
+.categories-footer{
+    padding: 25px;
+}
+
+/* Styles for the footer sections */
+.footer-section{
+    margin-bottom: 12px;
+}
+
+
+.footer-section span{
+    font-size: 13px;
+    font-weight: 500;
+    margin-right: 5px;
+    color: #606060;
+    cursor: pointer;
+}
+
+/* Styles for copyright information */
+.copyright{
+    color: #909090;
+    font-size: 12px;
+    border: none;
+}
+
+/* Styles for the filled button */
+#button-fill{
+    background-color: black;
+    color: white;
+}
+
+/* Styles for the videos section */
+.videos{
+    width: calc(100vw - 240px);
+    height: 100%;
+    background: white;
+    overflow-y: scroll;
+}
+
+/* Styles for the iron-selector */
+.iron-selector{
+    display: inline-block;
+    height: 56px;
+    white-space: nowrap;
+    width: 1945.87px;
+    overflow-x: auto;
+    will-change: transform;
+    max-width: calc(100% - 15px);
+    scrollbar-width: none; /* removes scrollbar */
+    position: sticky;
+    top: 0;
+    background-color: white;   
+}
+
+/* Styles for buttons within iron-selector */
+.iron-selector button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin: 12px 12px 12px 0px;
+    padding: 0px 12px;
+    flex-direction: row;
+    align-items: center;
+    min-width: 12px;
+    height: 32px;
+    line-height: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+    background-color: #f2f2f2;
+}
+
+/* Hover styles for buttons within iron-selector */
+.iron-selector button:hover {
+    background-color: #e6e3e3; 
+    color: #333; 
+}
+
+/* Styles for the video grid */
+.video-grid{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+/* Styles for individual videos within the grid */
+.video{
+    width: calc(33% - 10px);
+    margin-right: 13px;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+
+/* Styles for the sponsor section */
+.sponsor{
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+
+.sponsor .sponsor-bold{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.sponsor .sponsor-color{
+    color: #606060;
+}
+
+/* Styles for the booking action section */
+.booking-action .booking button{
+    width: 345px;
+    height: 36px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 20px;
+    background: #dff1fe;
+    color: #085ed4;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.booking-action .booking button:hover {
+    background: #dcdada;
+    color: #085ed4;
+}
+
+
+.booking button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styles for aligning container elements */
+.align-container {
+    display: flex;
+    align-items: center;
+}
+
+
+.posted-by .align-container i{
+    font-size: 14px;
+    font-weight: 800;
+}
+
+/* Styles for the thumbnail image within videos */
+.video .thumbnail img{
+    width:100%;
+    border-radius: 12px;
+}
+
+/* Styles for the first-profile image within videos */
+.video .first-profile img{
+    border-radius: 50%;
+    height: 36px;
+    width:auto;
+    margin-right: 12px;
+}
+
+/* Styles for the details section within videos */
+.video .details{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+
+.video .video-details p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+/* Styles for the profile section within videos */
+.video .profile {
+   margin-right: 12px; 
+}
+
+
+.video .profile img{
+    border-radius: 50%;
+    width: auto;
+    height: 36px;
+}
+
+/* Styles for views-date section within videos */
+.video .video-details .views-date{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.video .posted-by{
+    font-size: 14px;
+    font-weight: 500;
+    color: #606060;
+}
